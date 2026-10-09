@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doing javascript work</title>
+</head>
+
+<body>
+  <h1>doing javascript work</h1>
+
+  <script>
+    let a = 10;
+    let b = 5;
+
+    console.log(a + b, "this is a+b Addition");
+    console.log(a - b, "this is a-b subtract");
+    console.log(a * b, "this is a*b Multiplication");
+    console.log(a / b, "this is a/b Division");
+    console.log(a % b, "this is a % b module gives the reminder ");
+
+    // Exercise 2 part !
+
+    // Increment
+    /*means: Increase a by 1.*/
+    let d = 10;
+    let e = 11;
+    d++;
+    console.log(d);
+
+    // Decrement
+    /*means: Decrease a by 1.*/
+    let c = 30;
+    let f = 10;
+    c--;
+    console.log(c);
+    /*
+But now comes the important part:
+a++ vs ++a
+Don't memorize it. Let's observe it.
+Run this yourself:
+ */
+    let x = 10;
+    console.log(x++);
+    console.log(x);
+
+    let y = 10;
+    console.log(++y);
+    console.log(y);
+    /*
+++  = increase by 1
+--  = decrease by 1
+
+x++ = use first, increase afterward
+++x = increase first, use afterward
+
+x-- = use first, decrease afterward
+--x = decrease first, use afterward
+      */
+    let z = 10;
+
+    z += 5;  // x = x + 5
+    z -= 2;  // x = x - 2
+    z *= 3;  // x = x * 3 wirte as its power
+    z /= 2;  // x = x / 2
+    z %= 4;  // x = x % 4
+    z **= 2; // x = x ** 2
+    /*  
+     +  → +=
+     -  → -=
+     *  → *=
+     /  → /=
+     %  → %=
+     ** → **=
+     */
+    let score = 20;
+
+    score += 10;
+    score -= 5;
+    score *= 2;
+    score /= 5;
+    console.log(score += 10);
+    console.log(score -= 5);
+    console.log(score *= 2);
+    console.log(score /= 5);
+
+
+    /*
+      +=  → add and assign
+      You thought:
+    20 ÷ 6 = 3.5
+    
+    That's division, but % does NOT give the decimal result.
+    It gives the remainder.
+    
+    20 ÷ 6
+    = 3 complete groups
+    = 18 used
+    = 2 left over
+    
+    20 / 6  // 3.333...
+    20 % 6  // 2
+    
+    / → division result
+    % → remainder
+    
+    ----------------------------
+    important distinction!
+    ----------------------------
+    
+    🔥 Very important distinction
+    4 * 3
+    
+    means:
+    4 × 3 = 12
+    
+    But:
+    3 ** 4
+    
+    means:
+    3 × 3 × 3 × 3 = 81
+    
+    The first number is the base, and the second number tells you how many times to multiply the base by itself.
+    
+    ----------------------------
+    Symbols name!
+    ----------------------------
+    
+    | Symbol | What you should call it | Meaning |
+    |---|---|---|
+    | `=` | **equals / assignment operator** | Assigns a value |
+    | `+=` | **plus equals** | Add and assign |
+    | `-=` | **minus equals** | Subtract and assign |
+    | `*=` | **multiply equals** | Multiply and assign |
+    | `/=` | **divide equals** | Divide and assign |
+    | `%=` | **modulo equals** | Remainder and assign |
+    | `**=` | **exponentiation equals** / **power equals** | Power and assign |
+    
+    --------------------
+    
+    | Symbol | Name |
+    |---|---|
+    | `+` | plus / addition |
+    | `-` | minus / subtraction |
+    | `*` | asterisk / multiplication |
+    | `/` | slash / division |
+    | `%` | percent sign / modulo |
+    | `**` | exponentiation / power |
+    | `++` | increment |
+    | `--` | decrement || Symbol | Name |
+    |---|---|
+    | `+` | plus / addition |
+    | `-` | minus / subtraction |
+    | `*` | asterisk / multiplication |
+    | `/` | slash / division |
+    | `%` | percent sign / modulo |
+    | `**` | exponentiation / power |
+    | `++` | increment |
+    */
+    // 1
+    let g = 10;
+    let h = 10;
+
+    console.log(g == h);
+    console.log(10 == 10);
+
+    // because 10 is equal to 10
+
+    // 2
+    // != — not equal
+    console.log(10 != 5);
+
+    // 3. === — strict equality
+
+    console.log(10 === 10, "strict equality checks both value AND type.");
+    console.log(10 === "10");
+    /*
+    10    → Number
+  "10"  → String
+  Strict equality checks both value AND type.
+    */
+    //  4. !== — strict not equal
+    /*
+    | Operator | Checks | Example |
+  |---|---|---|
+  | `==` | value, with type conversion possible | `5 == "5"` → `true` |
+  | `===` | value **AND type** | `5 === "5"` → `false` |
+  | `!=` | not equal, loose | `5 != "5"` → `false` |
+  | `!==` | not equal, strict | `5 !== "5"` → `true` |
+    */
+  </script>
+</body>
+
+</html>
