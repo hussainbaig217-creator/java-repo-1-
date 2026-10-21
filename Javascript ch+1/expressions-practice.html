@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expressions-practice</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: black;
+        color: white;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Logical Operators 🧠</h1>
+    <script>
+        let a = 10;
+        let b = 5;
+
+        console.log(a + b);
+        console.log(a > b);
+        console.log(a === b);
+        console.log(a > 5 && b < 10);
+        // false         false  = false wrong 
+        // the aswer is True because a is greater than 5 and b is less than 10
+
+        //  making my own code !!
+
+        let NormalPass = false;
+        let PremiumPass = true;
+        let AllPass = !false;
+
+        console.log(NormalPass && PremiumPass);
+        console.log(PremiumPass === NormalPass);
+        console.log(NormalPass || PremiumPass && AllPass);
+        console.log(AllPass !== NormalPass);
+
+
+        let isLoggedIn = true;
+        let IsPremium = false;
+        let hasAccess = true;
+
+        console.log(isLoggedIn && IsPremium);
+        console.log(isLoggedIn || IsPremium);
+        console.log(!(isLoggedIn && IsPremium));
+        console.log(isLoggedIn && (IsPremium || hasAccess));
+
+        // chatgpt
+
+        let A = 10;
+        let B = 3;
+
+        console.log(A + B * 2);
+        console.log((A + B) * 2);
+        console.log(A > B && B < 5);
+
+    </script>
+</body>
+
+</html>
