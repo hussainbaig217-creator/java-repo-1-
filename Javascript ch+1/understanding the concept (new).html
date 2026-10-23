@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Understanding the concept of Arithmetic operators in js !</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis expedita tempora dignissimos magni distinctio
+        suscipit illum iure repellat blanditiis aliquam.</p>
+    <button>click me !</button>
+    <script>
+        let a = 10;
+        let b = 4;
+        /*console.log("Add a + b =", a + b);
+        console.log("Subtract a - b =", a - b);
+        console.log("Divide a % b =", a % b);
+        console.log(" Multiply a * b =", a * b);
+        console.log("Rise a ** b", a ** b);*/ 
+        
+
+        // The ++ and -- operators
+
+        // example of a++ 
+        /*console.log(a++, "this is increment of a++");
+        console.log(a, "after the increment of a++");*/ 
+        
+
+        // example of ++a
+        // console.log(++a);
+        // console.log(a);
+
+        // example of a-- 
+        // console.log(a--);
+        // console.log(a);
+
+        // example of --a
+        // console.log(--a);
+        // console.log(a);
+
+        // 3. Assignment operators
+        let assignment = 10;
+
+        /*console.log(assignment += 5);
+        console.log(assignment -= 1);
+        console.log(assignment /= 2);
+        console.log(assignment %= 9);
+        console.log(assignment *= 6);
+        console.log(assignment ** 5);*/ 
+        
+
+        // 4. Comparison operators
+        let comp1 = 6;
+        let comp2 = 7;
+        /* console.log("doing Comparison operators!!")
+        console.log(comp1 == comp2);
+        console.log(comp1 != comp2);
+        console.log(comp1 === comp2);
+        console.log(comp1 !== comp2);
+       */ 
+
+        // 5. Comparing values
+        // A comparison produces a Boolean: true or false.
+/*
+   | Operator | Meaning |
+|---|---|
+| `>` | Greater than |
+| `<` | Less than |
+| `>=` | Greater than or equal to |
+| `<=` | Less than or equal to |
+| `==` | Equal, allowing type conversion |
+| `!=` | Not equal, allowing type conversion |
+| `===` | Strictly equal: same value and type |
+| `!==` | Strictly not equal |
+*/
+
+//  9 < 4 false
+//  9 > 4 True 
+//  9 >= 9 true
+//  6 <= 5 false
+
+//  8 === 8 true
+//  8 !== 8 false
+
+//  8 == "8" false wrong
+//  8 === "8" false
+
+//  8 != "8" false
+// 1 8 !== "8" false wrong
+// ------------ test ---------
+
+/*
+console.log(9 < 4);
+console.log(9 > 4);
+console.log(9 >= 9);
+console.log(6 <= 5);
+
+console.log(8 === 8);
+console.log(8 !== 8);
+
+console.log(8 == '8');
+console.log(8 === "8");
+
+console.log(8 != "8");
+console.log(8 !== "8");
+// test number = 10/8 very good !
+*/
+
+// 6. Logical operators
+// Logical operators combine or change Boolean values.
+
+let age = 20;
+let hasTicket = true;
+
+// console.log(age >= 18 && hasTicket === true);
+// console.log(age < 18 || hasTicket === true);
+// console.log (!age >= 18);
+
+
+// 7. Order of operations and parentheses 
+/*console.log(8 + 12 / 4);
+console.log(8 + 12 ) /4;
+console.log(5 * 3 + 2);
+console.log(5 * (3 + 2));
+console.log(20 - 8 / 2);*/
+
+// 8. Put comparisons and logic together
+let p = 4;
+let q = 9;
+/*
+
+console.log(p < q && q === 9);
+console.log(p > q && q === 9);
+console.log(p > q || q === 9);
+console.log(p === 4 && q !==9);
+console.log(!(p < q));
+console.log(p + 1 === q - 4);
+console.log(p * 2 < q && q > 5);
+console.log((p + q) > 10 || p === 4);
+*/
+
+// 9. Predict the output
+
+let c = 6;
+let d = 3;
+
+console.log(c + d * 2);
+console.log((a+b)*2);
+
+let n = 10;
+
+console.log(n++);
+console.log(n);
+console.log(--n);
+console.log(n);
+
+let result = 20;
+
+result += 4;
+result /= 3;
+result **= 2;
+
+console.log(result);
+
+let first = 7;
+let second = 2;
+console.log(first > second && second !== 2);
+console.log(first > second || second !== 2);
+console.log(!(first < second));
+    </script>
+</body>
+
+</html>

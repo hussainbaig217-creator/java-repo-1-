@@ -60,7 +60,7 @@ var n = null;
 At a very high level there are two types of data types 
 in javascript      
 1.primitive data types : Undefined , null, boolean ,number , string ,symbols
-2.Refrence data types : Arrys , Objects 
+2.Reference data types : Arrys , Objects 
 
 */
 // var arr=[0,1,2,"hussain",4,5];
