@@ -112,8 +112,8 @@ console.log(8 !== "8");
 // 6. Logical operators
 // Logical operators combine or change Boolean values.
 
-let age = 20;
-let hasTicket = true;
+// let age = 20;
+// let hasTicket = true;
 
 // console.log(age >= 18 && hasTicket === true);
 // console.log(age < 18 || hasTicket === true);
@@ -286,11 +286,70 @@ let UserSignout = false;
 
 console.log(UserSignin && UserSignout);
 console.log(UserSignout || UserSignin);
+
 // upgraded it
 let score = 9;
 console.log(score === "9"|| score >= 8 );
 console.log(score >= 8 && score <=8);
-console.log(score > 10 || score < 10, score <= 5 || score >=5)
+console.log(score > 10 || score < 10, score <= 5 || score >=5);
+
+// JavaScript – Lesson 2: Conditional Statements  ( latest work i have been started yet)
+/*
+
+1. Today's topic: if, else if, and else.
+
+1. What are conditional statements?
+
+Conditional statements allow JavaScript to make decisions.
+
+For example, imagine a shopping website:
+- If the customer has enough money → Allow the purchase.
+- Otherwise → Show an insufficient balance message.
+JavaScript can make these decisions using conditions.
+let balance = 5000;
+*/
+
+// 2.
+/*if(balance <= 3000){
+    console.log("you can buy this product ---", "(this the latest new work !)");
+}*/
+
+
+// 3 Understanding else
+
+let balance = 1000;
+
+if (balance >= 3000){
+    console.log("purchased Successful");
+} else {
+    console.log("inSufficient balance");
+}
+
+// 4. Understanding else if
+
+let marks = 75;
+
+if(marks >= 90){
+    console.log("Grade A");
+}else if (marks >= 70){
+    console.log("Grade B");
+}else  if (marks >= 50){
+    console.log("Grade C")
+}else{
+    console.log("you need to improve");
+}
+
+let age = 18;
+
+if (age >= 20){
+    console.log("you can play the Gta V without any harmful affect!");
+}else if (age <= 18){
+    console.log("You cannot play this game for bad affect!");
+}else if (age === 18){
+    console.log("you can play it too because you are finally 18 !");
+}else{
+    console.log("Warning you cannot play this !");
+}
     </script>
 </body>
 
